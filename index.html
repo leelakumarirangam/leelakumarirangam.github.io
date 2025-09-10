@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0072ff, #00c6ff);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffe600;
+    }
+
+    section {
+      padding: 3rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #0072ff;
+    }
+
+    .about, .skills, .projects, .contact {
+      background: white;
+      border-radius: 10px;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .skills ul {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      list-style: none;
+    }
+
+    .skills li {
+      background: #e9f5ff;
+      padding: 10px;
+      border-radius: 6px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .projects .card {
+      background: #f0f8ff;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1rem;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .projects .card:hover {
+      transform: scale(1.02);
+    }
+
+    .projects a {
+      display: inline-block;
+      margin-top: 0.5rem;
+      text-decoration: none;
+      color: white;
+      background: #0072ff;
+      padding: 6px 12px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+
+    .projects a:hover {
+      background: #00c6ff;
+    }
+
+    .contact p {
+      margin-bottom: 0.5rem;
+    }
+
+    footer {
+      background: #0072ff;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Leela Kumari Rangam</h1>
+    <p>Full Stack Developer</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript, React</li>
+      <li>Backend: Java, Python</li>
+      <li>Database: MySQL</li>
+      <li>Build complete web apps</li>
+      <li>Focus on clean design + strong backend</li>
+      <li>Love learning new tools & technologies</li>
+    </ul>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML & CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Java</li>
+      <li>Python</li>
+      <li>MySQL</li>
+    </ul>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>CalculatorGUI</h3>
+      <p>A personal portfolio showcasing my skills and projects.</p>
+      <a href="https://github.com/leelakumarirangam/java-projects.git" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>TodoList</h3>
+      <p>Java project for handling Simple task manager for daily productivity..</p>
+      <a href="https://github.com/leelakumarirangam/java-projects.git" target="_blank">Live Demo</a>
+    </div>
+
+    <div class="card">
+      <h3>Library Management System</h3>
+      <p>Full-stack project with Add, update, and delete book records.</p>
+      <a href="https://github.com/leelakumarirangam/python-project.git" target="_blank">Live Demo</a>
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: rangamleelakumari@email.com</p>
+    <p>Phone: +91 8096822720</p>
+    <p>GitHub: <a href="https://github.com/leelakumarirangam" target="_blank">github.com/yourgithub</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Leela Kumari Rangam | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
